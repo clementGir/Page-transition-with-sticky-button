@@ -1,0 +1,65 @@
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body lang="fr">
+    <div id="container">
+      <div class="overlay hidden"></div>
+      <div class="buddy hidden scale" style="display: block;">         
+          <div class="cover-image"> </div>
+          <button class="circleButton">
+            <div id="logo">
+              <div class="smallCircle"></div> 
+              <div class="smallCircle"></div> 
+              <div class="smallCircle"></div> 
+            </div>
+          </button>  
+
+          <div class="recap">
+            <h2> Dj Dux night & pop <br> champaign</h2>
+            <p class="style">House / Techno</p>
+          </div> 
+
+          <div class="metrics">
+            <div class="metric"><h1>2,7 km</h1></div>
+            <div class="metric"><h1>182</h1><h5>participants</h5></div>
+            <div class="metric"><h1>10€</h1></div>
+          </div>       
+ 
+      </div>
+
+
+    </div>  
+    <div class="plus">plus</div> 
+  </body>
+
+  <script type="text/javascript">
+
+$(".circleButton").click(function () {
+    
+    if($('button').hasClass('open')) {       
+        $(this).addClass('close').removeClass('open');
+        $(".plus").addClass('back').removeClass('display');
+        $(".overlay").addClass('hidden');
+
+    }
+    else{
+        $(this).removeClass('close').addClass('open');
+        $(".plus").removeClass('back').addClass('display');
+        $(".overlay").removeClass('hidden');
+
+    }
+});
+
+  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+
+</html>
+
